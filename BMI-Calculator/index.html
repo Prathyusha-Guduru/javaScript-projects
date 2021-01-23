@@ -20,24 +20,28 @@
 		rel="stylesheet">
 
 
+
+
 </head>
 
 <body>
 	<main class="d-flex justify-content-center align-items-center">
 		<div class="row contents d-flex justify-content-space-between align-items-center">
 			<div class="col-lg-6 right">
-				<img src="assets/images/undraw_energizer_2224.svg" alt="" srcset="" width="650" height="450"
+				<img src="assets/images/undraw_working_out_6psf.svg" alt="" srcset="" width="675" height="500"
 					class="illustration">
 			</div>
 			<div class="col-lg-6 left d-flex justify-content-center align-items-center">
 				<div class="text d-flex justify-content-center">
 					<!-- <h2 class=" heading">BMI</h2> -->
-					<form action="" class="input-boxes d-flex flex-column align-items-center">
-						<input type="number" required id="weight" class="input-box" min="0" placeholder="Weight">
-						<input type="number" required id="height" class="input-box" min="0" step="any"
-							placeholder="Height">
-						<input type="submit" value="Submit" class="submit-btn">
+					<form class="input-boxes d-flex flex-column align-items-center" id="form">
+
+						<input type="text" id="weight" class="input-box" min="0" placeholder="Weight(Kg)">
+						<input type="text" id="height" class="input-box" min="0" placeholder="Height(m)">
+						<!-- <input type="submit" value="Submit" class="submit-btn" id="submit"> -->
+						<button type="submit" id="submit" class="submit-btn">Submit</button>
 					</form>
+					<div id="result"></div>
 				</div>
 			</div>
 		</div>
