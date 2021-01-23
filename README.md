@@ -1,7 +1,7 @@
 # javaScript-projects
 Just a list of some simple javaScript projects 
 
-
+Click on screenshots to check the live version 🔥
 
 ## BMI Calculator : 
 <br>
