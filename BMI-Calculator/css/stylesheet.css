@@ -71,13 +71,13 @@ box-shadow:  24px -24px 49px #bebebe,-24px 24px 49px #ffffff;
 	padding: 10px;
 }
 
-input::-webkit-outer-spin-button,
+/* input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Firefox */
+
 input[type=number] {
   -moz-appearance: textfield;
 }
@@ -86,13 +86,12 @@ input[type=number] {
 	font-size: 15px;
 	position: absolute ;
 	left: 50px;
-}
+} */
 
 .submit-btn{
 	border-radius: 30px;
-background: #e0e0e0;
-box-shadow:  24px -24px 49px #bebebe,
-			 -24px 24px 49px #ffffff;
+	background-color: #e0e0e0;
+	box-shadow:  24px -24px 49px #bebebe,-24px 24px 49px #ffffff;
 	padding : 10px 30px;
 }
 
