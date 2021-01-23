@@ -38,7 +38,7 @@ main{
 	/* background: #e0e0e0;
 	box-shadow:  19px 19px 48px #acacac,-19px -19px 48px #ffffff; */
 	background-color: #e6e7ee;
-border-radius: 30px;
+border-radius: 20px;
 box-shadow: 7px 7px 14px #cbced1,
             -7px -7px 14px #fff;
 	transition-duration: 300ms;
@@ -82,6 +82,7 @@ box-shadow:  24px -24px 49px #bebebe,-24px 24px 49px #ffffff; */
 	margin: 20px;
 	padding: 10px;
 	border: none;
+	font-size: 0.8rem;
 }
 
 /* input::-webkit-outer-spin-button,
@@ -95,13 +96,13 @@ input[type=number] {
   -moz-appearance: textfield;
 } */
 
-::placeholder{
+/* ::placeholder{
 	font-size: 15px;
 	position: absolute ;
 	left: 50px;
 	padding: 0 0 0 20px;
 	color : #303030;
-}
+} */
 
 .submit-btn{
 	background-color: #e6e7ee;
@@ -127,7 +128,7 @@ input[type=number] {
 .option{
 	
 	height: 80px;
-	width: 300px;
+	width: 350px;
 	background-color: #e6e7ee;
 	border-radius: 30px;
 	box-shadow: 7px 7px 14px #cbced1,
@@ -153,7 +154,7 @@ label{
 
 input[type = "radio"]:checked + label{
 	background-color: #e6e7ee;
-	border-radius: 30px;
+	border-radius: 20px;
 	box-shadow: 7px 7px 14px #cbced1,
 				-7px -7px 14px #fff;
 }
@@ -164,6 +165,10 @@ input[type = "radio"]:checked + label{
 	font-size: 18px;
 }
 
-a{
+.github-link{
 	color : #303030;
+}
+
+.github-link:hover{
+	color: #197163;
 }

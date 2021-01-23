@@ -1,5 +1,5 @@
 let option = 'standard';
-let images = ['assets/images/1.svg','assets/images/2.svg','assets/images/3.svg','assets/images/4.svg','assets/images/5.svg','assets/images/6.svg','assets/images/7.svg'];
+let images = ['assets/images/1.svg','assets/images/2.svg','assets/images/3.svg','assets/images/4.svg','assets/images/5.svg','assets/images/6.svg','assets/images/7.svg','assets/images/8.svg'];
 let randomNumber = Math.floor(Math.random() * images.length);
 let rightImage = document.getElementsByClassName('right')[0];
 

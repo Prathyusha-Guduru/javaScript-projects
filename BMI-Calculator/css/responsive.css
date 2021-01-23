@@ -1,0 +1,23 @@
+@media only screen and (max-width: 600px) {
+	main{
+		position: absolute;
+	}
+	.illustration{
+		/* background-color: lightcoral; */
+		/* width: 100vw;
+		height: 80vh;
+		position: relative;
+		top: 10px; */
+		visibility: hidden;
+	}
+	#result{
+		visibility: hidden;
+	}
+
+	.left{
+		height: 100vh;
+		position: relative;
+		bottom: 100px;
+	}
+
+}
