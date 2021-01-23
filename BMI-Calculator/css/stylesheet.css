@@ -50,4 +50,56 @@ main{
 	font-size: 50px;
 }
 
-.
+.input-boxes{
+	/* background-color: lightcyan; */
+}
+
+form {
+	/* background-color: lightslategrey; */
+	height: 60%;
+	position: absolute;
+	bottom : 100px;
+}
+
+.input-box{
+	border-radius: 60px;
+background: #e0e0e0;
+box-shadow:  24px -24px 49px #bebebe,-24px 24px 49px #ffffff;
+	width: 90%;
+	height: 40px;
+	margin: 20px;
+	padding: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+::placeholder{
+	font-size: 15px;
+	position: absolute ;
+	left: 50px;
+}
+
+.submit-btn{
+	border-radius: 30px;
+background: #e0e0e0;
+box-shadow:  24px -24px 49px #bebebe,
+			 -24px 24px 49px #ffffff;
+	padding : 10px 30px;
+}
+
+.input-box:hover{
+	box-shadow: none;
+}
+.submit-btn:hover{
+	box-shadow: none;
+}
+
