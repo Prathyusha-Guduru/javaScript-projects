@@ -9,7 +9,7 @@ main{
 	height: 100vh;
 	width: 100%;
 	/* background-color: lightpink; */
-	background-color: #e0e0e0;
+	background-color: #e6e7ee;
 }
 
 .contents{
@@ -35,9 +35,12 @@ main{
 .text{
 	height: 90%;
 	width: 80%;
-	border-radius: 16px;
-	background: #e0e0e0;
-	box-shadow:  19px 19px 48px #acacac,-19px -19px 48px #ffffff;
+	/* background: #e0e0e0;
+	box-shadow:  19px 19px 48px #acacac,-19px -19px 48px #ffffff; */
+	background-color: #e6e7ee;
+border-radius: 30px;
+box-shadow: 7px 7px 14px #cbced1,
+            -7px -7px 14px #fff;
 	transition-duration: 300ms;
 	position: relative;
 }
@@ -63,15 +66,17 @@ form {
 }
 
 .input-box{
-	border-radius: 60px;
+
 /* background: #e0e0e0;
 box-shadow:  24px -24px 49px #bebebe,-24px 24px 49px #ffffff; */
-border-radius: 36px;
+
 /* background: #e0e0e0; */
 /* box-shadow:  24px -24px 49px #bebebe,
-			 -24px 24px 49px #ffffff; */
-			 background: #e0e0e0;
-			 box-shadow:  19px 19px 48px #acacac,-19px -19px 48px #ffffff;
+			 -24px 24px 49px #ffffff; */	
+	background-color: #e6e7ee;
+	border-radius: 30px;
+	box-shadow: 7px 7px 14px #cbced1,
+				-7px -7px 14px #fff;
 	width: 90%;
 	height: 40px;
 	margin: 20px;
@@ -95,12 +100,14 @@ input[type=number] {
 	position: absolute ;
 	left: 50px;
 	padding: 0 0 0 20px;
+	color : #303030;
 }
 
 .submit-btn{
+	background-color: #e6e7ee;
 	border-radius: 30px;
-	background: #e0e0e0;
-	box-shadow:  19px 19px 48px #acacac,-19px -19px 48px #ffffff;
+	box-shadow: 7px 7px 14px #cbced1,
+				-7px -7px 14px #fff;
 	border: none;	
 	padding : 10px 30px;
 }
@@ -117,12 +124,14 @@ input[type=number] {
 	bottom: 100px;
 }
 
-.option{
-	/* background-color: lightcoral; */
-	height: 100px;
+/* .option{
+	
+	height: 80px;
 	width: 400px;
-	box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),10px 10px 15px rgba(70,70,70,0.12);
-	border-radius: 50px;
+	background-color: #e6e7ee;
+	border-radius: 30px;
+	box-shadow: 7px 7px 14px #cbced1,
+				-7px -7px 14px #fff;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -143,7 +152,10 @@ label{
 }
 
 input[type = "radio"]:checked + label{
-	box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.5), inset 10px 10px 15px rgba(70,70,70,0.12);
+	background-color: #e6e7ee;
+	border-radius: 30px;
+	box-shadow: 7px 7px 14px #cbced1,
+				-7px -7px 14px #fff;
 }
 
-
+ */
