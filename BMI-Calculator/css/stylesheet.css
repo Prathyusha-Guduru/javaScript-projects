@@ -76,6 +76,7 @@ border-radius: 36px;
 	height: 40px;
 	margin: 20px;
 	padding: 10px;
+	border: none;
 }
 
 /* input::-webkit-outer-spin-button,
@@ -100,7 +101,7 @@ input[type=number] {
 	border-radius: 30px;
 	background: #e0e0e0;
 	box-shadow:  19px 19px 48px #acacac,-19px -19px 48px #ffffff;
-
+	border: none;	
 	padding : 10px 30px;
 }
 
@@ -114,4 +115,36 @@ input[type=number] {
 #result{
 	position: absolute;
 	bottom: 100px;
+}
+
+.option{
+	/* background-color: lightcoral; */
+	height: 100px;
+	width: 480px;
+	box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),10px 10px 15px rgba(70,70,70,0.12);
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	/* position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto; */
+}
+
+
+input[type = "radio"]{
+	display: none;
+}
+label{
+	font-size: 27px;
+	padding: 15px 35px;
+	font-weight: 600;
+	color: #303030;
+}
+
+input[type = "radio"]:checked + label{
+	box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.5), inset 10px 10px 15px rgba(70,70,70,0.12);
 }
