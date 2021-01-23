@@ -59,7 +59,7 @@ form {
 	/* background-color: lightslategrey; */
 	height: 60%;
 	position: absolute;
-	bottom : 100px;
+	bottom : 150px;
 }
 
 .input-box{
@@ -120,18 +120,14 @@ input[type=number] {
 .option{
 	/* background-color: lightcoral; */
 	height: 100px;
-	width: 480px;
+	width: 400px;
 	box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),10px 10px 15px rgba(70,70,70,0.12);
 	border-radius: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	/* position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto; */
+	position: relative;
+	bottom: 50px;
 }
 
 
@@ -139,12 +135,15 @@ input[type = "radio"]{
 	display: none;
 }
 label{
-	font-size: 27px;
-	padding: 15px 35px;
+	font-size: 18px;
+	padding: 15px 25px;
 	font-weight: 600;
 	color: #303030;
+	border-radius: 55px;
 }
 
 input[type = "radio"]:checked + label{
 	box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.5), inset 10px 10px 15px rgba(70,70,70,0.12);
 }
+
+
