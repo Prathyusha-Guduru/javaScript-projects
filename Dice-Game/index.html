@@ -6,16 +6,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>DiceGame🎲</title>
 	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
 </head>
 
 <body>
 	<main>
 		<div class="container">
-			<h1 id="class-heading">RELOAD</h1>
-			<div class="left"></div>
-			<div class="right"></div>
+			<h1 id="top-heading">Dice Game</h1>
+			<div class="players-section">
+				<div class="left">
+					<h2 class="player-heading">Player 1</h2>
+					<img src="assets/images/dice-1.jpg" alt="" srcset="" id="dice-img">
+				</div>
+				<div class="right">
+					<h2 class="player-heading">Player 2</h2>
+					<img src="assets/images/dice-1.jpg" alt="" srcset="" id="dice-img">
+				</div>
+			</div>
+			<button type="submit" id="play-button">Play!</button>
+			<div id="result">
+				<h2>Player 1 wins</h2>
+			</div>
 		</div>
 	</main>
+	<script src="script.js"></script>
 </body>
 
 </html>
