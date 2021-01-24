@@ -3,13 +3,16 @@ let playButton = document.getElementById('play-button')
 let winner
 let draw = false
 let result = document.getElementById('result')
+let player1Dice = document.getElementById('player-1-dice')
+let player2Dice = document.getElementById('player-2-dice')
 
 
 playButton.addEventListener('click',(event)=>{
 	event.preventDefault()
 	let randomNumber1 = Math.floor(Math.random() * diceImages.length)
 	let randomNumber2 = Math.floor(Math.random()*diceImages.length)
-	
+	player1Dice.innerHTML = `<img src=${diceImages[randomNumber1]} alt="" srcset="" id="dice-img">`
+	player2Dice.innerHTML = `<img src=${diceImages[randomNumber2]} alt="" srcset="" id="dice-img">`
 	randomNumber1>randomNumber2 ? winner = "Player 1" : winner = "Player 2"
 	randomNumber1 === randomNumber2 ? draw = true : draw = false
 	if(draw === false){
