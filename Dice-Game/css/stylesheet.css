@@ -8,7 +8,7 @@
 main{
 	width: 100vw;
 	height: 100vh;
-	background-color: lightpink;
+	/* background-color: lightpink; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -22,7 +22,7 @@ main{
 	display: flex;
 	align-items: center;
 	color: #4f4f4f ;
-	background-color: lightcoral;
+	/* background-color: lightcoral; */
 	flex-direction: column;
 }
 
@@ -31,14 +31,14 @@ main{
 }
 
 .players-section{
-	background-color: lightskyblue;
+	/* background-color: lightskyblue; */
 	width: 90%;
 	height: 70%;
 	display: flex;
 }
 
 .left,.right{
-	background-color: lightgreen;
+	/* background-color: lightgreen; */
 	width: 50%;
 	display: flex;
 	align-items: center;
@@ -46,7 +46,7 @@ main{
 }
 
 .player-heading{
-	background-color: lightslategray;
+	/* background-color: lightslategray; */
 	font-size: 30px;
 	padding: 20px;
 }
@@ -54,4 +54,18 @@ main{
 #result{
 	height: 30%;
 	font-size: 40px;
+}
+
+#play-button{
+	padding: 10px 40px;
+	background-color: #4f4f4f;
+	border: 1px #4f4f4f solid;
+	color: whitesmoke;
+	margin-bottom: 40px;
+}
+
+#play-button:hover{
+	background-color: white;
+	color: #4f4f4f;
+	border: 2px solid #4f4f4f;
 }
