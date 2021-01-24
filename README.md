@@ -9,3 +9,11 @@ Click on screenshots to check the live version 🔥
     <img src = "BMI-Calculator/assets/images/bmi.jpg" alt = "Screenshot">
 </a>
 <br>
+
+## Dice Game  : 
+<br>
+<a href = "https://dice-it.netlify.app/">
+    <img src = "Dice-Game/assets/images/Screenshot.jpg" alt = "Screenshot">
+</a>
+<br>
+
