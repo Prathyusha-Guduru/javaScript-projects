@@ -69,3 +69,35 @@ main{
 	color: #4f4f4f;
 	border: 2px solid #4f4f4f;
 }
+
+
+@media only screen and (max-width: 600px) 
+{	
+	*{
+		text-align: center;
+	}
+	.players-section{
+		flex-direction: column;
+	}
+	.left,.right{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	#play-button{
+		position: relative;
+		top: 200px;
+	}
+
+	#result{
+		position: relative;
+		top: 200px;
+		text-align: center;
+	}
+	#top-heading{
+		position: relative;
+		bottom: 30px;
+	}
+}
