@@ -57,6 +57,8 @@ let cardsChosenPairId = []
 let cardsWon = []
 let status = document.getElementById('status')
 let scoreNumber = 0
+let startButton = document.getElementById('start')
+let timer = document.getElementById('timer')
 
 //Shuffling the cards using sort()
 cardArray.sort(()=> Math.random() - 0.5)
@@ -116,7 +118,13 @@ function flipCard(){
 
 
 
-createGameBoard()
+
+startButton.addEventListener('click',()=>{
+	createGameBoard()
+	startButton.style.visibility = 'hidden'
+	timer()
+})
+
 
 
 

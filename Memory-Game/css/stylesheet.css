@@ -12,10 +12,10 @@
 }
 
 .score{
-	font-size: 40px;
+	font-size: 30px;
 	text-align: center;
 	height: 20%;
-	/* background-color: lightcoral; */
+	margin-bottom: 20px;
 	position: relative;
 	left: 200px;
 
@@ -42,7 +42,6 @@ main{
 .container{
 	display: flex;
 	flex-direction: column;
-	background-color: lightcoral;
 	justify-content: center;
 	align-items: center;
 	/* height: 70%;
@@ -58,7 +57,8 @@ main{
 
 img{
 	margin: 10px;
-	transition-duration: 500;
+	transition-duration: 1s;
+	border-radius: 13px;
 }
 
 
@@ -66,4 +66,6 @@ img:hover{
 	transform: scale(1.1);
 	
 }
+
+
 
