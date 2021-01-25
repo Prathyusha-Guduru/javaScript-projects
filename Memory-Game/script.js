@@ -55,7 +55,7 @@ const grid = document.getElementsByClassName('grid')[0]
 let cardsChosenPair = []
 let cardsChosenPairId = []
 let cardsWon = []
-let score = document.getElementById('score')
+let status = document.getElementById('status')
 let scoreNumber = 0
 
 //Shuffling the cards using sort()
@@ -83,7 +83,7 @@ function checkCardsMatch(){
 		allCards[secondChosenCardId].setAttribute('src','assets/images/blank-image.png')
 		cardsWon.push(cardsChosenPair)
 		scoreNumber++
-		score.innerHTML = `<h3 id="score">Score : ${scoreNumber} </h3>`
+		status.innerHTML = `<h3 class="score">Score : ${scoreNumber} </h3>`
 	}
 	else if(firstChosenCardId === secondChosenCardId || cardArray[firstChosenCardId].img != cardArray[secondChosenCardId].img){
 		alert("Oops! Try Again")
@@ -114,5 +114,13 @@ function flipCard(){
 
 }
 
+
+
 createGameBoard()
+
+
+
+
+
+
 

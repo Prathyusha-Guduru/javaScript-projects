@@ -3,41 +3,67 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto Mono', monospace;
+	background-color: #75A7A3;
 }
 
-#score{
+#status{
+	/* background-color: lightskyblue; */
+	width: 100%;
+}
+
+.score{
 	font-size: 40px;
 	text-align: center;
-	margin: 20px 0 30px 0;
+	height: 20%;
+	/* background-color: lightcoral; */
+	position: relative;
+	left: 200px;
+
 }
 
+.status{
+	font-size: 20px;
+	position: relative;
+	left: 200px;
+	margin: 0px 0 10px 0;
+}
 
 
 main{
 	height: 100vh;
 	width: 100vw;
-	background-color: #8bcdcd;
+	/* background-color: #8bcdcd; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	/* flex-direction: column; */
 }
 
 .container{
 	display: flex;
 	flex-direction: column;
+	background-color: lightcoral;
 	justify-content: center;
 	align-items: center;
-	height: 70%;
-	background-color: lightgreen;
-	width: 90%;
+	/* height: 70%;
+	width: 90%; */
 }
 
 .grid{
 	display: flex;
 	flex-wrap: wrap;
-	height: 600px;
-	width: 800px;
+	height: 700px;
+	width: 900px;
+}
+
+img{
+	margin: 10px;
+	transition-duration: 500;
 }
 
 
+img:hover{
+	transform: scale(1.1);
+	
+}
 
