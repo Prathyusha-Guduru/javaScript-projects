@@ -1,3 +1,4 @@
+//Global variables
 const cardArray = [
 	{
 		name : 'card1',
@@ -55,11 +56,13 @@ let cardsWon = []
 let score = document.getElementById('score')
 let scoreNumber = 0
 
-//Creating the game board
+//Shuffling the cards using sort()
+cardArray.sort(()=> Math.random() - 0.5)
 
+//Creating the game board
 function createGameBoard(){
 	for(let i=0;i<cardArray.length;i++){
-		var card = document.createElement('img')
+		let card = document.createElement('img')
 		card.setAttribute('src','assets/images/cover-img.png')
 		card.setAttribute('id',i)
 		card.addEventListener('click',flipCard)
@@ -90,8 +93,6 @@ function checkCardsMatch(){
 
 }
 
-
-
 //Flipping the cards
 function flipCard(){
 	let cardId = this.getAttribute('id')
@@ -110,5 +111,6 @@ function flipCard(){
 		}
 
 }
+
 createGameBoard()
 
