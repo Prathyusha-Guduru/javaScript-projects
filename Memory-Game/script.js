@@ -2,53 +2,55 @@
 const cardArray = [
 	{
 		name : 'card1',
-		img  : 'assets/images/memory-card-1.png'
+		img  : 'assets/images/memory-card-1.jpg'
 	},
 	{
 		name : 'card1',
-		img  : 'assets/images/memory-card-1.png'
+		img  : 'assets/images/memory-card-1.jpg'
 	},
 	{
 		name : 'card2',
-		img  : 'assets/images/memory-card-2.png'
+		img  : 'assets/images/memory-card-2.jpg'
 	},
 	{
 		name : 'card2',
-		img  : 'assets/images/memory-card-2.png'
+		img  : 'assets/images/memory-card-2.jpg'
 	},
 	{
 		name : 'card3',
-		img  : 'assets/images/memory-card-3.png'
+		img  : 'assets/images/memory-card-3.jpg'
 	},
 	{
 		name : 'card3',
-		img  : 'assets/images/memory-card-3.png'
+		img  : 'assets/images/memory-card-3.jpg'
 	},
 	{
 		name : 'card4',
-		img  : 'assets/images/memory-card-4.png'
+		img  : 'assets/images/memory-card-4.jpg'
 	},
 	{
 		name : 'card4',
-		img  : 'assets/images/memory-card-4.png'
+		img  : 'assets/images/memory-card-4.jpg'
 	},
 	{
 		name : 'card5',
-		img  : 'assets/images/memory-card-5.png'
+		img  : 'assets/images/memory-card-5.jpg'
 	},
 	{
 		name : 'card5',
-		img  : 'assets/images/memory-card-5.png'
+		img  : 'assets/images/memory-card-5.jpg'
 	},
 	{
 		name : 'card6',
-		img  : 'assets/images/memory-card-6.png'
+		img  : 'assets/images/memory-card-6.jpg'
 	},
 	{
 		name : 'card6',
-		img  : 'assets/images/memory-card-6.png'
+		img  : 'assets/images/memory-card-6.jpg'
 	}
 ]
+
+
 const grid = document.getElementsByClassName('grid')[0]
 let cardsChosenPair = []
 let cardsChosenPairId = []
@@ -63,7 +65,7 @@ cardArray.sort(()=> Math.random() - 0.5)
 function createGameBoard(){
 	for(let i=0;i<cardArray.length;i++){
 		let card = document.createElement('img')
-		card.setAttribute('src','assets/images/cover-img.png')
+		card.setAttribute('src','assets/images/cover-image.png')
 		card.setAttribute('id',i)
 		card.addEventListener('click',flipCard)
 		grid.appendChild(card)
@@ -77,16 +79,16 @@ function checkCardsMatch(){
 	let allCards = document.querySelectorAll('img')
 	if(cardArray[firstChosenCardId].img === cardArray[secondChosenCardId].img && firstChosenCardId != secondChosenCardId){
 		alert("Huray you found a match!")
-		allCards[firstChosenCardId].setAttribute('src','assets/images/blank-img.png')
-		allCards[secondChosenCardId].setAttribute('src','assets/images/blank-img.png')
+		allCards[firstChosenCardId].setAttribute('src','assets/images/blank-image.png')
+		allCards[secondChosenCardId].setAttribute('src','assets/images/blank-image.png')
 		cardsWon.push(cardsChosenPair)
 		scoreNumber++
 		score.innerHTML = `<h3 id="score">Score : ${scoreNumber} </h3>`
 	}
 	else if(firstChosenCardId === secondChosenCardId || cardArray[firstChosenCardId].img != cardArray[secondChosenCardId].img){
 		alert("Oops! Try Again")
-		allCards[firstChosenCardId].setAttribute('src','assets/images/cover-img.png')
-		allCards[secondChosenCardId].setAttribute('src','assets/images/cover-img.png')
+		allCards[firstChosenCardId].setAttribute('src','assets/images/cover-image.png')
+		allCards[secondChosenCardId].setAttribute('src','assets/images/cover-image.png')
 	}
 	cardsChosenPair = []
 	cardsChosenPairId = []
