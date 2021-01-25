@@ -66,9 +66,18 @@ function createGameBoard(){
 	}
 }
 
+function checkCardsMatch(){
+	
+}
+
 function flipCard(){
 	let cardId = this.getAttribute('id')
-	console.log(cardId);
+	this.setAttribute('src',cardArray[cardId].img)
+	cardsChosenPair.push(cardArray[cardId])
+	cardsChosenPairId.push(cardId)
+	if(cardsChosenPair.length === 2){
+		setTimeout(checkCardsMatch,500)
+	}
 }
 
 
