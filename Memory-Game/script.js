@@ -56,7 +56,9 @@ const cardArray = [
 const grid = document.querySelector('.grid')
 let cardsChosen = []
 let cardsChosenId = []
-console.log(grid);
+let cardsWon = []
+let result = document.getElementById('result')
+
 
 function createBoard(){
 	for(let i=0;i<cardArray.length;i++){
@@ -69,7 +71,24 @@ function createBoard(){
 }
 
 //Check for matches
+function checkForMatch(){
+	var cards = document.querySelectorAll('img')
+	const optionOneId = cardsChosenId[0]
+	const optionTwoId = cardsChosenId[1]
+	if (cardsChosen[0] === cardsChosen[1]){
+		alert("You found a match")
+		cards[optionOneId].setAttribute('src','assets/images/blank-img.png')
+		cards[optionTwoId].setAttribute('src','assets/images/blank-img.png')
+		cardsWon.push(cardsChosen)
+	}
+	else{
+		cards[optionOneId].setAttribute('src','assets/images/cover-img.png')
+		cards[optionTwoId].setAttribute('src','assets/images/cover-img.png')
+	}
+	cardsChosen = []
+	cardsChosenId = []
 
+}
 //Flip the card
 function flipCard()
 {
@@ -77,6 +96,9 @@ function flipCard()
 	cardsChosen.push(cardArray[cardId].name)
 	cardsChosenId.push(cardId)
 	this.setAttribute('src',cardArray[cardId].img)
+	if(cardsChosen.length === 2){
+		setTimeout(checkForMatch,500)
+	}
 }
 
 createBoard()
