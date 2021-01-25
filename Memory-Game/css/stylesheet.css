@@ -2,12 +2,34 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: 'Roboto Mono', monospace;
 }
+
+#score{
+	font-size: 40px;
+	text-align: center;
+	margin: 20px 0 30px 0;
+}
+
+
 
 main{
 	height: 100vh;
 	width: 100vw;
 	background-color: #8bcdcd;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 70%;
+	background-color: lightgreen;
+	width: 90%;
 }
 
 .grid{
@@ -16,4 +38,6 @@ main{
 	height: 300px;
 	width: 400px;
 }
+
+
 
