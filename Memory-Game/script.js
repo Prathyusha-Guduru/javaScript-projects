@@ -52,7 +52,7 @@ const cardArray = [
 const grid = document.getElementsByClassName('grid')[0]
 let cardsChosenPair = []
 let cardsChosenPairId = []
-
+let cardsWon = []
 
 //Creating the game board
 
@@ -66,21 +66,38 @@ function createGameBoard(){
 	}
 }
 
+//For checking if the cards match or not
 function checkCardsMatch(){
-	
+	let firstChosenCardId = cardsChosenPairId[0]
+	let secondChosenCardId = cardsChosenPairId[1]
+	let allCards = document.querySelectorAll('img')
+	if(cardArray[firstChosenCardId].img === cardArray[secondChosenCardId].img && firstChosenCardId != secondChosenCardId){
+		alert("Huray you found a match!")
+		allCards[firstChosenCardId].setAttribute('src','assets/images/blank-img.png')
+		allCards[secondChosenCardId].setAttribute('src','assets/images/blank-img.png')
+		cardsWon.push(cardsChosenPair)
+	}
+	else if(firstChosenCardId === secondChosenCardId || cardArray[firstChosenCardId].img != cardArray[secondChosenCardId].img){
+		alert("Oops! Try Again")
+		allCards[firstChosenCardId].setAttribute('src','assets/images/cover-img.png')
+		allCards[secondChosenCardId].setAttribute('src','assets/images/cover-img.png')
+	}
+	cardsChosenPair = []
+	cardsChosenPairId = []
+
 }
 
+//Flipping the cards
 function flipCard(){
 	let cardId = this.getAttribute('id')
 	this.setAttribute('src',cardArray[cardId].img)
 	cardsChosenPair.push(cardArray[cardId])
 	cardsChosenPairId.push(cardId)
+	console.log(cardsChosenPair);
 	if(cardsChosenPair.length === 2){
 		setTimeout(checkCardsMatch,500)
 	}
 }
-
-
 
 
 createGameBoard()
