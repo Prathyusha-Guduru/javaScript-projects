@@ -121,24 +121,23 @@ function flipCard(){
 function timer() 
 {
 	let timeDisplay = document.createElement('h1')
-	if(timeLeft <=0){
-		clearInterval(timeLeft = 0)
-
-	}
-	if(timeLeft <=0){
-		
-	}
 	setInterval(function(){
+		if(timeLeft <=10){
+			timerSection.style.color = "#f25f5c"
+		}
+		if(timeLeft <=0){
+			clearInterval(timeLeft = 0)
+		}
 		timeLeft-=1
-		timeDisplay.innerHTML = `${timeLeft}`
+		timeDisplay.innerHTML = `Time Left : ${timeLeft}s`
 		timerSection.appendChild(timeDisplay)
 	},1000)
 }
 
 startButton.addEventListener('click',()=>{
-	createGameBoard()
-	startButton.style.visibility = 'hidden'
+	startButton.style.visibility = "hidden"
 	timer()
+	createGameBoard()
 })
 
 

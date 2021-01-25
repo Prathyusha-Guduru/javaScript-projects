@@ -17,7 +17,8 @@
 	height: 20%;
 	margin-bottom: 20px;
 	position: relative;
-	left: 200px;
+	left: 335px;
+	background-color: lightcoral;
 
 }
 
@@ -59,6 +60,7 @@ img{
 	margin: 10px;
 	transition-duration: 1s;
 	border-radius: 13px;
+	box-shadow: 5px 10px #888888;
 }
 
 
@@ -67,5 +69,8 @@ img:hover{
 	
 }
 
+.red{
+	color: #f25f5c;
+}
 
 
