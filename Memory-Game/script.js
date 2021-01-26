@@ -60,6 +60,8 @@ let scoreNumber = 0
 let startButton = document.getElementById('start')
 let timerSection = document.getElementById('timer')
 let timeLeft = 30
+let runningCom = document.getElementById("running-commentary")
+status.style.visibility = "hidden"
 
 //Shuffling the cards using sort()
 cardArray.sort(()=> Math.random() - 0.5)
@@ -82,20 +84,22 @@ function checkCardsMatch(){
 	let allCards = document.querySelectorAll('img')
 	if(cardArray[firstChosenCardId].img === cardArray[secondChosenCardId].img && firstChosenCardId != secondChosenCardId){
 		// alert("Huray you found a match!")
+		runningCom.innerHTML = `<p class = "center">You found a match!</p>`
 		allCards[firstChosenCardId].setAttribute('src','assets/images/blank-image.png')
 		allCards[secondChosenCardId].setAttribute('src','assets/images/blank-image.png')
 		cardsWon.push(cardsChosenPair)
 		scoreNumber++
 		status.innerHTML = `<h3 class="score">Score : ${scoreNumber} </h3>`
-		if(scoreNumber == 6){
-			alert("Yayyyyyyyyyy! You won!")
-			location.reload()
-		}
 	}
 	else if(firstChosenCardId === secondChosenCardId || cardArray[firstChosenCardId].img != cardArray[secondChosenCardId].img){
 		// alert("Oops! Try Again")
+		runningCom.innerHTML = `<p class = "center">Oops! Try Again</p>`
 		allCards[firstChosenCardId].setAttribute('src','assets/images/cover-image.png')
 		allCards[secondChosenCardId].setAttribute('src','assets/images/cover-image.png')
+	}
+	if(scoreNumber == 6){
+		alert("Yayyyyyyyyyy! You won!")
+		location.reload()
 	}
 	cardsChosenPair = []
 	cardsChosenPairId = []
@@ -124,28 +128,32 @@ function flipCard(){
 
 function timer() 
 {
-	let timeDisplay = document.createElement('h1')
-	setInterval(function(){
+	let timeDisplay = document.createElement('h2')
+	
+	let timeInterval = setInterval(function(){
 		if(timeLeft <=10){
 			timerSection.style.color = "#f25f5c"
 		}
 		if(timeLeft <=0){
-			clearInterval(timeLeft = 0)
+			clearInterval(timeInterval)
 			alert("Oops! Time Up")
 			location.reload()
-			return 
 		}
 		timeLeft-=1
 		timeDisplay.innerHTML = `Time Left : ${timeLeft}s`
 		timerSection.appendChild(timeDisplay)
 	},1000)
+	
 }
 
 startButton.addEventListener('click',()=>{
 	startButton.style.visibility = "hidden"
+	status.style.visibility = "visible"
 	timer()
 	createGameBoard()
 })
+
+
 
 
 
