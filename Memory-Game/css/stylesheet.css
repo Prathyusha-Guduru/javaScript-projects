@@ -7,26 +7,21 @@
 }
 
 #status{
-	/* background-color: lightskyblue; */
 	width: 100%;
 }
 
 .score{
 	font-size: 30px;
-	text-align: center;
-	height: 20%;
 	margin-bottom: 20px;
-	position: relative;
-	left: 335px;
+	width: 30%;
 	background-color: lightcoral;
 
 }
 
-.status{
-	font-size: 20px;
-	position: relative;
-	left: 200px;
-	margin: 0px 0 10px 0;
+.top{
+	display: flex;
+	width: 100%;
+	background-color: lightsalmon;
 }
 
 
@@ -45,8 +40,6 @@ main{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/* height: 70%;
-	width: 90%; */
 }
 
 .grid{
@@ -69,8 +62,5 @@ img:hover{
 	
 }
 
-.red{
-	color: #f25f5c;
-}
 
 
