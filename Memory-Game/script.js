@@ -81,15 +81,19 @@ function checkCardsMatch(){
 	let secondChosenCardId = cardsChosenPairId[1]
 	let allCards = document.querySelectorAll('img')
 	if(cardArray[firstChosenCardId].img === cardArray[secondChosenCardId].img && firstChosenCardId != secondChosenCardId){
-		alert("Huray you found a match!")
+		// alert("Huray you found a match!")
 		allCards[firstChosenCardId].setAttribute('src','assets/images/blank-image.png')
 		allCards[secondChosenCardId].setAttribute('src','assets/images/blank-image.png')
 		cardsWon.push(cardsChosenPair)
 		scoreNumber++
 		status.innerHTML = `<h3 class="score">Score : ${scoreNumber} </h3>`
+		if(scoreNumber == 6){
+			alert("Yayyyyyyyyyy! You won!")
+			location.reload()
+		}
 	}
 	else if(firstChosenCardId === secondChosenCardId || cardArray[firstChosenCardId].img != cardArray[secondChosenCardId].img){
-		alert("Oops! Try Again")
+		// alert("Oops! Try Again")
 		allCards[firstChosenCardId].setAttribute('src','assets/images/cover-image.png')
 		allCards[secondChosenCardId].setAttribute('src','assets/images/cover-image.png')
 	}
@@ -127,6 +131,9 @@ function timer()
 		}
 		if(timeLeft <=0){
 			clearInterval(timeLeft = 0)
+			alert("Oops! Time Up")
+			location.reload()
+			return 
 		}
 		timeLeft-=1
 		timeDisplay.innerHTML = `Time Left : ${timeLeft}s`
