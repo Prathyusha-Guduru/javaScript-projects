@@ -2,10 +2,27 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	color: #3b5360;
 }
 
 .list-items{
 	display: flex;
-	/* justify-content: center; */
 	align-items: center;
 }
+
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	background-color: #f0efea;
+}
+
+.todo-container{
+	background-color: #fff;
+	width: 30%;
+	height: 50%;
+	text-align: center;
+}
+

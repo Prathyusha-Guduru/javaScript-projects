@@ -1,6 +1,5 @@
 let listItemDisplay = document.getElementById('list-item-display')
 let newItemInputForm = document.getElementById('form')
-let list = []
 let n = 0
 newItemInputForm.addEventListener('submit',(event)=>{
 	event.preventDefault()
@@ -15,14 +14,12 @@ newItemInputForm.addEventListener('submit',(event)=>{
 	checkBoxes.forEach((element)=>
 	{
 		element.addEventListener('click',()=>{
+			let elementClass = element.className
+			let elementContent = document.getElementsByClassName(elementClass[0]+'p')[0]
 			if(element.checked === true){
-				let elementClass = element.className
-				let elementContent = document.getElementsByClassName(elementClass[0]+'p')[0]
 				elementContent.style.textDecoration = "line-through"
 			}
 			else if(element.checked === false){
-				let elementClass = element.className
-				let elementContent = document.getElementsByClassName(elementClass[0]+'p')[0]
 				elementContent.style.textDecoration = "initial"
 			}
 		})
