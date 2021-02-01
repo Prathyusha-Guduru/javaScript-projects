@@ -1,0 +1,12 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	height: 100vh;
+	width: 100vw;
+	background-color: lightgreen;
+	background: linear-gradient(-130deg, #5d60eb 50%, #fc7476 50%);
+}
