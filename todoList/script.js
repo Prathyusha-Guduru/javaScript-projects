@@ -40,12 +40,25 @@ class UI{
 //Event : Display books
 document.addEventListener('DOMContentLoaded',UI.displayItems())
 //Event : add a book
+
+
+
+// let itemInput = document.getElementById('add-item')
+// let itemEntryText = document.getElementById('item-entry-text')
+// let newListItem = new todoItems(itemEntryText)
+// itemInput.addEventListener('submit',(event)=>{
+// 	event.preventDefault()
+// 	UI.addItemsToList({itemText : itemEntryText.value})
+// })
+
+
 let itemInput = document.getElementById('add-item')
 let itemEntryText = document.getElementById('item-entry-text')
-let newListItem = new todoItems(itemEntryText)
-console.log();
 itemInput.addEventListener('submit',(event)=>{
 	event.preventDefault()
 	UI.addItemsToList({itemText : itemEntryText.value})
 })
+
+
+
 //Event : Remove a book 
