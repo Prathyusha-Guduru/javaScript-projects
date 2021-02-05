@@ -35,21 +35,21 @@ class UI{
 
 //Handles local storage
 
+
+
 //Event : Display books
 document.addEventListener('DOMContentLoaded',UI.displayItems())
+
+
 //Event : add a book
-
-
 let itemInput = document.getElementById('add-item')
 let itemEntryText = document.getElementById('item-entry-text')
-
 itemInput.addEventListener('submit',(event)=>{
 	event.preventDefault()
 	let newItem = new todoItems(itemEntryText.value)
 	// console.log(newItem);
 	UI.addItemsToList(newItem)
 })
-
 
 
 //Event : Remove a book 
