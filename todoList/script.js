@@ -7,6 +7,8 @@ class todoItems
 
 }
 
+//Number of tasks
+let numOfTasks = 0
 
 //UI Class : handles UI tasks
 class UI{	
@@ -23,6 +25,8 @@ class UI{
 		todoItem.classList.add('item-container')
 		todoItem.innerHTML = `<p>${item.itemText}</p><button class = "delete-button">Delete</button>`
 		todoElementList.appendChild(todoItem)
+		numOfTasks+=1
+		console.log(numOfTasks);
 	} 
 
 	static removeItemFromList(element){

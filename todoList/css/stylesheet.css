@@ -9,8 +9,24 @@
 	width: 100vw;
 	background-color: lightgreen;
 	background: linear-gradient(-130deg, #5d60eb 50%, #fc7476 50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
+.todo-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: lightgoldenrodyellow;
+}
+
 
 .item-container{
 	color: #fff;
+	width: 100%;
+	
+	display: flex;
+	background-color: lightblue;
+	margin: 10px 0 10px 0;
 }
