@@ -31,9 +31,6 @@ class UI{
 		todoElementList.appendChild(todoItem)
 	}
 
-	static removeItemsFromList(item){
-		
-	}
 
 }
 
@@ -57,3 +54,4 @@ itemInput.addEventListener('submit',(event)=>{
 
 
 //Event : Remove a book 
+document.querySelector()
