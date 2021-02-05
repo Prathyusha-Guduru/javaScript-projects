@@ -55,8 +55,9 @@ itemInput.addEventListener('submit',(event)=>{
 //Event : Remove a book 
 let listItems = document.getElementById('todo-elements-list')
 listItems.addEventListener('click',(event)=>{
-	console.log(event.target);
-	UI.removeItemFromList(event.target.parentElement)
+	if(event.target.classList.contains('delete-button')){
+		UI.removeItemFromList(event.target.parentElement)
+	}
 	
 })
 
