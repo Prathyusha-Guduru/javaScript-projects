@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<input type="text" id="input-box">
+	<button type="submit" id="submit-box">Submit</button>
+	<script>
+		(localStorage.getItem("name")) ? console.log(localStorage.getItem("name")) : console.log("nothing")
+		document.getElementById('submit-box').addEventListener('click', (event) => {
+			let text = document.getElementById('input-box').value
+			console.log(text);
+			localStorage.setItem("name", text)
+
+		})
+	</script>
+</body>
+
+</html>

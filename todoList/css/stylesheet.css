@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* Entire container */
@@ -23,6 +24,8 @@
 	background-color: lightgoldenrodyellow;
 	justify-content: center;
 	width: 30%;
+	overflow:auto;
+	max-height: 400px;
 }
 
 /* Entry Item into the todo list */
@@ -30,6 +33,10 @@
 	width: 100%;
 	background-color: lightslategrey;
 	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 }
 
 

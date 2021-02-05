@@ -65,7 +65,6 @@ itemInput.addEventListener('submit',(event)=>{
 	}
 	else{
 		let newItem = new todoItems(itemEntryText.value)
-		// console.log(newItem);
 		UI.addItemsToList(newItem)
 	}
 })
