@@ -11,8 +11,7 @@ class todoItems
 //UI Class : handles UI tasks
 class UI{	
 	static displayItems(){
-		let StoredItems =[
-		]
+		let StoredItems =[]
 
 		const items = StoredItems
 		items.forEach((item)=> UI.addItemsToList(item))
@@ -24,17 +23,27 @@ class UI{
 		todoItem.classList.add('item-container')
 		todoItem.innerHTML = `<p>${item.itemText}</p><button class = "delete-button">Delete</button>`
 		todoElementList.appendChild(todoItem)
-	}
+	} 
 
 	static removeItemFromList(element){
 		element.remove()
 	}
-
-
 }
 
 //Handles local storage
+class Storage{
+	static getListItems(){
+		
+	}
 
+	static addListItems(){
+
+	}
+
+	static removeListItems(){
+
+	}
+}
 
 
 //Event : Display books
@@ -46,9 +55,15 @@ let itemInput = document.getElementById('add-item')
 let itemEntryText = document.getElementById('item-entry-text')
 itemInput.addEventListener('submit',(event)=>{
 	event.preventDefault()
-	let newItem = new todoItems(itemEntryText.value)
-	// console.log(newItem);
-	UI.addItemsToList(newItem)
+
+	if(itemEntryText.value === ''){
+		alert("Please enter a value")
+	}
+	else{
+		let newItem = new todoItems(itemEntryText.value)
+		// console.log(newItem);
+		UI.addItemsToList(newItem)
+	}
 })
 
 
