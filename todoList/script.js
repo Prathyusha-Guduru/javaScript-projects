@@ -27,6 +27,7 @@ class UI{
 	static addItemsToList(item){
 		let todoElementList = document.getElementById('todo-elements-list')
 		let todoItem = document.createElement('div')
+		todoItem.classList.add('item-container')
 		todoItem.innerHTML = `<p>${item.itemText}</p><button class = "delete-button">Delete</button>`
 		todoElementList.appendChild(todoItem)
 	}
@@ -54,4 +55,6 @@ itemInput.addEventListener('submit',(event)=>{
 
 
 //Event : Remove a book 
-document.querySelector()
+document.querySelector('.item-container').addEventListener('click',(e)=>{
+	
+})
