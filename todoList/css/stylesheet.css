@@ -14,6 +14,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 
 /* ToDo list container */
@@ -37,12 +38,14 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	width: 30%;
 }
 
 
 
+
 #add-item>input{
-	width: 90%;
+	width: 80%;
 	background-color: #fff;
 }
 

@@ -23,7 +23,8 @@ class UI{
 		let todoElementList = document.getElementById('todo-elements-list')
 		let todoItem = document.createElement('div')
 		todoItem.classList.add('item-container')
-		todoItem.innerHTML = `<p>${item.itemText}</p><button class = "delete-button">Delete</button>`
+		// <button class = "delete-button">Delete</button>
+		todoItem.innerHTML = `<p>${item.itemText}</p><img class = "delete-button" src = "assets/icons/delete.svg" width = "20">`
 		todoElementList.appendChild(todoItem)
 		numOfTasks+=1
 		console.log(numOfTasks);
