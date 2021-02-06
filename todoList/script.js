@@ -80,3 +80,8 @@ listItems.addEventListener('click',(event)=>{
 	
 })
 
+
+//Interactivity events
+itemEntryText.addEventListener(('click',()=>{
+	itemEntryText.classList.add('single-line-border')
+}))
