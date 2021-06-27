@@ -26,7 +26,7 @@ main{
 
 .box-wrapper{
 	@include flexCenter();
-	
+	flex-wrap: wrap;
 }
 
 .box{
@@ -49,6 +49,6 @@ main{
 	background-color: yellow;
 }
 
-.box-4{
+.box-0{
 	background-color: green;
 }
